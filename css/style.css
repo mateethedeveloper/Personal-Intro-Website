@@ -1,0 +1,227 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;  
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* particleground demo */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #222324;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+}
+
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
+}
+
+#intro {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 0 10px;
+  width: 100%;
+  text-align: center;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 120;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+h1::after {
+  content: '';
+  width: 80px;
+  display: block;
+  background: #fff;
+  height: 10px;
+  margin: 30px auto;
+  line-height: 1.1;
+}
+p {
+  margin: 0 0 30px 0;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  #intro {
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 6px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 4px;
+  }
+}
+
+.rounded-circle {
+  border-radius: 50%!important;
+}
+
+.hvh {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+  background:rgba(49, 49, 49, 0.9); /* Box Color */
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center;
+  z-index: 2;
+}
+.hvh .title {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #7a45ee; /* Color For Title */
+  margin-bottom: 5px;
+}
+.hvh pfp {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  outline: none !important;
+}
+.hvh pfp img {
+  margin: 0px 0 0px;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+.hvh .desc {
+  font-size: 17px;
+  opacity: 0.8;
+  margin-bottom: 3px;
+  color: white; /* Description Text Color You Can Use Hex Colors Instead Of Defualt Ex. #ff0000  */
+}
+.hvh .spc {
+  padding: 20px 20px 5px; /* Spacing */
+}
+.hvh .spc::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.hvh .btn {
+  position: relative;
+  z-index: 1;
+  float: center;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #7a45ee; /* Button Text Color */
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  line-height: 1;
+  margin: 5px;
+  border: none;
+  background: none;
+  outline: none;
+  border: 1px solid #7a45ee; /* Button Border Color */
+  border-radius: 20px;
+  overflow: hidden;
+}
+.hvh .btn .bg {
+  width: 100%;
+  height: 100%;
+  display: block !important;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, #9a13a6, #8634d3);
+}
+.hvh .btn:hover {
+  color: #fff !important;
+  border: 2px solid transparent !important;
+}
+.hvh .btn:hover .bg {
+  opacity: 1;
+}
+
+.time {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  color: white;
+}
